@@ -23,6 +23,8 @@ app.get("/api/users", usersHandlers.getUsers);
 app.get("/api/users/:id", usersHandlers.getUsersById);
 app.post("/api/users", usersHandlers.postUser);
 app.post("/api/movies", movieHandlers.postMovie);
+app.put("/api/movies/:id", movieHandlers.putMovie);
+app.put("/api/users/:id", usersHandlers.changeUser);
 
 app.listen(port, (err) => {
   if (err) {
